@@ -14,6 +14,11 @@ const teamMembers = [
     role: "Co-founder",
     image: "/cofounder.jpg",
   },
+  {
+    name: "ADITHYA MK",
+    role: "Graphics Designer",
+    image: "/adithya.jpg",
+  },
 ];
 
 export default function Team() {
@@ -36,7 +41,7 @@ export default function Team() {
           </p>
         </motion.div>
 
-        <div className="flex flex-col md:flex-row justify-center items-center gap-12 md:gap-24">
+        <div className="flex flex-col md:flex-row flex-wrap justify-center items-center gap-12 lg:gap-20">
           {teamMembers.map((member, idx) => (
             <motion.div
               key={member.name}
