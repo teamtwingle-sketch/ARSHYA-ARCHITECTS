@@ -7,12 +7,12 @@ const teamMembers = [
   {
     name: "ADARSH M K",
     role: "Founder",
-    image: "/images/founder.jpg", // Replace with the actual image paths when moved to public folder
+    image: "/founder.jpg",
   },
   {
     name: "ARYA U S",
     role: "Co-founder",
-    image: "/images/cofounder.jpg",
+    image: "/cofounder.jpg",
   },
 ];
 
