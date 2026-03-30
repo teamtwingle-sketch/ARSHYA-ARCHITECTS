@@ -53,7 +53,7 @@ export default function About() {
           </motion.div>
 
           {/* Image Content */}
-          <div className="relative h-[600px] w-full rounded-2xl overflow-hidden group">
+          <div className="relative h-[600px] w-full rounded-2xl overflow-hidden group mb-12 lg:mb-0">
             <motion.div style={{ y: imgY }} className="absolute inset-0 h-[120%] -top-[10%] w-full">
               <Image
                 src="/images/about_kerala_1774456479897.png"
@@ -64,6 +64,36 @@ export default function About() {
             </motion.div>
           </div>
         </div>
+
+        {/* Extended SEO Copy */}
+        <motion.div 
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.8, delay: 0.4 }}
+          className="mt-24 pt-16 border-t border-zinc-200"
+        >
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 text-zinc-600 leading-relaxed text-[15px]">
+            <div>
+              <h3 className="text-xl font-bold font-heading text-zinc-900 mb-4">Leading Architecture & Civil Engineering Company in Kozhikode</h3>
+              <p className="mb-4">
+                When searching for the <strong>best architects in Kerala</strong> or a trusted <strong>civil engineer in Kozhikode</strong>, Arshya Architects stands out with an unyielding commitment to excellence. As a premier construction company in Kozhikode, our primary goal is to merge the timeless charm of traditional Kerala architecture with the sophistication of modern, Apple-inspired minimalism. We offer highly tailored residential architects and commercial architects services specifically crafted to suit Kerala’s unique tropical climate.
+              </p>
+              <p>
+                From structural design to securing <strong>building permits in Kerala</strong>, we provide end-to-end civil engineering services. Achieving a municipality building permit or Kerala house plan approval can seem daunting, but our dedicated regulatory team ensures smooth, hassle-free processing to get your project legally underway.
+              </p>
+            </div>
+            <div>
+              <h3 className="text-xl font-bold font-heading text-zinc-900 mb-4">Premium Interior Design & Kerala House Plans</h3>
+              <p className="mb-4">
+                Our expertise isn't just limited to structural engineering. If you are looking for top-rated <strong>interior design in Kerala</strong>, our award-winning home interior designers curate spaces that reflect personality while maximizing spatial utility. Every <strong>Kerala house design</strong> we draft ensures cross-ventilation, abundant natural lighting, and climate-responsive materials that not only lower carbon footprints but promise unparalleled luxury and comfort.
+              </p>
+              <p>
+                Whether it's modernizing a traditional Nalukettu home or constructing a bold, contemporary commercial headquarters, our team of dedicated architectural structural engineers in Kerala is ready to turn your dream vision into a tangible masterpiece. Experience why Arshya Architects is consistently ranked among the best architects in Kerala for precision, aesthetic brilliance, and rigorous build quality.
+              </p>
+            </div>
+          </div>
+        </motion.div>
       </div>
     </section>
   );

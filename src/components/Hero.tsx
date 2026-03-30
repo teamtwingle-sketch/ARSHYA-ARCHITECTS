@@ -77,10 +77,19 @@ export default function Hero() {
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
-          className="text-5xl md:text-7xl lg:text-8xl font-heading text-white font-bold tracking-tight leading-tight mb-8"
+          className="text-5xl md:text-7xl lg:text-8xl font-heading text-white font-bold tracking-tight leading-tight mb-6"
         >
-          Modern Architecture, <br /> Rooted in Kerala
+          Best Architects in Kerala
         </motion.h1>
+
+        <motion.p
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.5 }}
+          className="text-white/80 text-lg md:text-xl max-w-2xl text-center mb-8 font-light"
+        >
+          Award-winning architectural and civil engineering services in Kozhikode. Designing premium residential and commercial spaces with expert interior design and seamless building permit approvals across Kerala.
+        </motion.p>
 
         <motion.div
           initial={{ opacity: 0, y: 30 }}
