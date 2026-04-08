@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: '/',
       disallow: '/private/',
     },
-    sitemap: 'https://arshya-architects.vercel.app/sitemap.xml',
+    sitemap: 'https://www.arshyaarchitects.com/sitemap.xml',
   };
 }

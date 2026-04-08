@@ -16,6 +16,7 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.arshyaarchitects.com"),
   title: "Best Architects in Kerala & Civil Engineer Kozhikode | Arshya Architects",
   description: "Arshya Architects is the leading architecture and construction company in Kerala. We specialize in modern house design, civil engineering in Kozhikode, interior design, and Kerala building permits.",
   keywords: ["Best Architects in Kerala", "Civil Engineer Kozhikode", "Civil Engineer Kerala", "Interior Design Kerala", "Building Permit Kerala", "Residential Architects Kerala", "Commercial Architects Kerala", "Construction Company Kozhikode"],
@@ -25,13 +26,23 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_IN",
-    url: "https://arshya-architects.vercel.app/",
+    url: "https://www.arshyaarchitects.com/",
     siteName: "Arshya Architects",
     title: "Best Architects in Kerala & Civil Engineer Kozhikode | Arshya Architects",
     description: "Expert architecture, interior design, structural engineering, and building permit services in Kozhikode and across Kerala.",
     images: ["/images/about_kerala_1774456479897.png"],
   },
-  robots: "index, follow",
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
 };
 
 export default function RootLayout({
@@ -43,9 +54,9 @@ export default function RootLayout({
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "Arshya Architects",
-    "image": "https://arshya-architects.vercel.app/images/about_kerala_1774456479897.png",
+    "image": "https://www.arshyaarchitects.com/images/about_kerala_1774456479897.png",
     "description": "Premium architecture, civil engineering, interior design, and building permit services in Kozhikode and Kerala.",
-    "url": "https://arshya-architects.vercel.app",
+    "url": "https://www.arshyaarchitects.com",
     "telephone": "+910000000000",
     "address": {
       "@type": "PostalAddress",
